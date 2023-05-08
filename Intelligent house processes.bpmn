@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_09z35wg" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.8.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0">
+  <bpmn:collaboration id="Collaboration_0kiomsi">
+    <bpmn:participant id="Participant_1qgdxoc" processRef="Process_1481w6i" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_1481w6i" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" />
+    <bpmn:subProcess id="Activity_04q2ig2" name="Lighting control">
+      <bpmn:startEvent id="Event_0p6b3bq" />
+    </bpmn:subProcess>
+    <bpmn:subProcess id="Activity_07091f2" name="Manage temperature">
+      <bpmn:startEvent id="Event_1ukiij5" />
+    </bpmn:subProcess>
+    <bpmn:subProcess id="Activity_0mry87a" name="Control appliances">
+      <bpmn:startEvent id="Event_0mwxfe7" />
+    </bpmn:subProcess>
+    <bpmn:subProcess id="Activity_11g1ogg" name="Manage security">
+      <bpmn:startEvent id="Event_0cdjg0s" />
+    </bpmn:subProcess>
+    <bpmn:subProcess id="Activity_097f8ms" name="Monitor energy usage">
+      <bpmn:startEvent id="Event_16vdwy4" />
+    </bpmn:subProcess>
+    <bpmn:subProcess id="Activity_143rtzd" name="Provide entertainment">
+      <bpmn:startEvent id="Event_0mbdko1" />
+    </bpmn:subProcess>
+    <bpmn:subProcess id="Activity_06vvywz" name="Automate routines">
+      <bpmn:startEvent id="Event_08gpsqv" />
+    </bpmn:subProcess>
+    <bpmn:subProcess id="Activity_04ezun5" name="Enable voice control">
+      <bpmn:startEvent id="Event_1n96d1t" />
+    </bpmn:subProcess>
+    <bpmn:subProcess id="Activity_15518a4" name="Integrate with other devices">
+      <bpmn:startEvent id="Event_0j7wwbo" />
+    </bpmn:subProcess>
+    <bpmn:subProcess id="Activity_0kwohc9" name="Monitor health and wellness">
+      <bpmn:startEvent id="Event_1fj5r6p" />
+    </bpmn:subProcess>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0kiomsi">
+      <bpmndi:BPMNShape id="Participant_1qgdxoc_di" bpmnElement="Participant_1qgdxoc" isHorizontal="true">
+        <dc:Bounds x="160" y="85" width="690" height="2255" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="242" y="192" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_04q2ig2_di" bpmnElement="Activity_04q2ig2" isExpanded="true">
+        <dc:Bounds x="330" y="100" width="350" height="200" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0p6b3bq_di" bpmnElement="Event_0p6b3bq">
+        <dc:Bounds x="370" y="182" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_07091f2_di" bpmnElement="Activity_07091f2" isExpanded="true">
+        <dc:Bounds x="330" y="320" width="350" height="200" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1ukiij5_di" bpmnElement="Event_1ukiij5">
+        <dc:Bounds x="370" y="402" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0mry87a_di" bpmnElement="Activity_0mry87a" isExpanded="true">
+        <dc:Bounds x="330" y="540" width="350" height="200" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0mwxfe7_di" bpmnElement="Event_0mwxfe7">
+        <dc:Bounds x="370" y="622" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_11g1ogg_di" bpmnElement="Activity_11g1ogg" isExpanded="true">
+        <dc:Bounds x="330" y="760" width="350" height="200" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0cdjg0s_di" bpmnElement="Event_0cdjg0s">
+        <dc:Bounds x="370" y="842" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_097f8ms_di" bpmnElement="Activity_097f8ms" isExpanded="true">
+        <dc:Bounds x="330" y="980" width="350" height="200" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_16vdwy4_di" bpmnElement="Event_16vdwy4">
+        <dc:Bounds x="370" y="1062" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_143rtzd_di" bpmnElement="Activity_143rtzd" isExpanded="true">
+        <dc:Bounds x="330" y="1200" width="350" height="200" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0mbdko1_di" bpmnElement="Event_0mbdko1">
+        <dc:Bounds x="370" y="1282" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_06vvywz_di" bpmnElement="Activity_06vvywz" isExpanded="true">
+        <dc:Bounds x="330" y="1420" width="350" height="200" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_08gpsqv_di" bpmnElement="Event_08gpsqv">
+        <dc:Bounds x="370" y="1502" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_04ezun5_di" bpmnElement="Activity_04ezun5" isExpanded="true">
+        <dc:Bounds x="320" y="1640" width="350" height="200" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1n96d1t_di" bpmnElement="Event_1n96d1t">
+        <dc:Bounds x="360" y="1722" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_15518a4_di" bpmnElement="Activity_15518a4" isExpanded="true">
+        <dc:Bounds x="320" y="1870" width="350" height="200" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0j7wwbo_di" bpmnElement="Event_0j7wwbo">
+        <dc:Bounds x="360" y="1952" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0kwohc9_di" bpmnElement="Activity_0kwohc9" isExpanded="true">
+        <dc:Bounds x="320" y="2110" width="350" height="200" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1fj5r6p_di" bpmnElement="Event_1fj5r6p">
+        <dc:Bounds x="360" y="2192" width="36" height="36" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
