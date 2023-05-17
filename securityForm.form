@@ -1,0 +1,42 @@
+{
+  "components": [
+    {
+      "text": "# Do you wish to call the police?",
+      "type": "text",
+      "layout": {
+        "row": "Row_1gvvkep",
+        "columns": null
+      },
+      "id": "Field_0yqn2uo"
+    },
+    {
+      "values": [
+        {
+          "label": "Yes",
+          "value": "yes"
+        },
+        {
+          "label": "No",
+          "value": "no"
+        }
+      ],
+      "type": "radio",
+      "layout": {
+        "row": "Row_0c41x1a",
+        "columns": null
+      },
+      "id": "Field_0vlsmvj",
+      "key": "police",
+      "defaultValue": "value"
+    }
+  ],
+  "type": "default",
+  "id": "securityForm",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.2.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.11.0"
+  },
+  "schemaVersion": 8
+}
