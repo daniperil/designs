@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_08iin4v" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.11.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0">
+  <bpmn:collaboration id="Collaboration_040xmwp">
+    <bpmn:participant id="Participant_04ka848" name="Erosion" processRef="Process_00si31n" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_00si31n" isExecutable="true">
+    <bpmn:subProcess id="Activity_10nmohn" name="Weathering">
+      <bpmn:startEvent id="Event_1pc5pdp" />
+      <bpmn:subProcess id="Activity_1rdkxsl" name="Detachment">
+        <bpmn:startEvent id="Event_1k79vq3" />
+        <bpmn:subProcess id="Activity_1rg9kc8" name="Transportation">
+          <bpmn:startEvent id="Event_002ohhz" />
+          <bpmn:subProcess id="Activity_18p203r" name="Deposition">
+            <bpmn:startEvent id="Event_1edxnco" />
+          </bpmn:subProcess>
+        </bpmn:subProcess>
+      </bpmn:subProcess>
+    </bpmn:subProcess>
+    <bpmn:startEvent id="StartEvent_1" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_040xmwp">
+      <bpmndi:BPMNShape id="Participant_04ka848_di" bpmnElement="Participant_04ka848" isHorizontal="true">
+        <dc:Bounds x="120" y="52" width="1550" height="738" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="212" y="252" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_10nmohn_di" bpmnElement="Activity_10nmohn" isExpanded="true">
+        <dc:Bounds x="290" y="120" width="1310" height="630" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1pc5pdp_di" bpmnElement="Event_1pc5pdp">
+        <dc:Bounds x="342" y="202" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1rdkxsl_di" bpmnElement="Activity_1rdkxsl" isExpanded="true">
+        <dc:Bounds x="480" y="160" width="1010" height="520" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1k79vq3_di" bpmnElement="Event_1k79vq3">
+        <dc:Bounds x="520" y="242" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1rg9kc8_di" bpmnElement="Activity_1rg9kc8" isExpanded="true">
+        <dc:Bounds x="610" y="210" width="760" height="370" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_002ohhz_di" bpmnElement="Event_002ohhz">
+        <dc:Bounds x="650" y="292" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_18p203r_di" bpmnElement="Activity_18p203r" isExpanded="true">
+        <dc:Bounds x="750" y="290" width="350" height="200" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1edxnco_di" bpmnElement="Event_1edxnco">
+        <dc:Bounds x="790" y="372" width="36" height="36" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
