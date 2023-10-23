@@ -25,4 +25,6 @@ Process Orchestration: Is the coordination of individual business tasks that spa
 
 Camunda life-cycle: Design -> Automate -> Improve   REPEAT
 
+"Waste is a design flaw" - Kate Kreba
+
 
